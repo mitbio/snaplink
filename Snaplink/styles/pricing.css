@@ -1,0 +1,150 @@
+  /* CSS for the pricing section */
+    .pricing-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      min-height: 100vh; /* Ensures the container takes up the full height of the viewport */
+      justify-content: center; /* Centers content vertically */
+    }
+	.pricing-container {
+	  width: 100%;
+	  overflow-x: hidden;
+	  /* Other styles */
+	}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+    .pricing-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .pricing-header h1 {
+      font-size: 2rem;
+      color: #333;
+    }
+
+    .pricing-header p {
+      color: #555;
+      font-size: 1.2rem;
+    }
+
+    .pricing-plans {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      width: 100%; /* Ensures the pricing cards align centrally */
+      max-width: 1000px; /* Sets a max width for wider screens */
+    }
+
+    .pricing-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 280px;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .pricing-card h2 {
+      font-size: 1.5rem;
+      color: #4a4a4a;
+    }
+
+    .pricing-card p {
+      font-size: 1rem;
+      color: #777;
+      margin: 10px 0;
+    }
+
+    .cta-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #6A1B9A; /* Accent color (purple) */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      background-color: #8e44ad;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      width: 100%;
+      max-width: 400px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: none; /* Initially hidden */
+    }
+
+    .contact-form h3 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      color: #333;
+      text-align: center;
+    }
+
+    .contact-form label {
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+    }
+
+    .contact-form button {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      background-color: #6A1B9A;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #8e44ad;
+    }
+
+    /* Responsive design for mobile screens */
+    @media (max-width: 768px) {
+      .pricing-plans {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .pricing-card {
+        width: 100%;
+      }
+    }

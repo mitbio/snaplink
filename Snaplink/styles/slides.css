@@ -1,0 +1,125 @@
+        /* Basic styling for the body */
+        #slidesBods {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #slidesBody {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Container for the slider */
+        .swiper-container {
+            width: 100%;
+            max-width: 400px; /* Limit max width on larger screens */
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Styling for each slide */
+        .swiper-slide {
+            text-align: center;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 300px; /* Fixed height for consistency */
+            box-sizing: border-box;
+        }
+
+        /* Image styling */
+        .slide-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+        }
+
+        /* Styling for the heading */
+        .slide-heading {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        /* Styling for the paragraph with 68% opacity */
+        .slide-paragraph-68 {
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.68); /* 68% opacity */
+            margin-bottom: 8px;
+        }
+
+        /* Styling for the main paragraph */
+        .slide-paragraph {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        /* Ensure the button starts on a new line */
+        .button-wrapper {
+            width: 100%; /* Take up the full width of the slide container */
+            display: flex;
+            justify-content: center; /* Center the button horizontally */
+            margin-top: 20px; /* Add some space from content above */
+        }
+
+        /* Get Started Button Styles */
+        .get-started-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 24px;
+            background-color: #6a0dad; /* Purple background */
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 20px;
+            border: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        /* Icon beside the Button */
+        .icon-link {
+            display: inline-block;
+            margin-right: 10px; /* Space between icon and text */
+        }
+
+        .icon-link img.icon {
+            width: 20px; /* Adjust icon size */
+            height: 20px;
+            object-fit: cover;
+        }
+
+        /* Button Hover Animation */
+        .get-started-btn:hover {
+            background-color: #9b30ff; /* Slightly lighter purple on hover */
+            transform: scale(1.05); /* Subtle hover effect */
+        }
+
+        /* Button Click Animation */
+        .get-started-btn:active {
+            transform: scale(0.98); /* Shrink slightly when clicked */
+        }
+
+        /* Add subtle animation to the button */
+        .get-started-btn {
+            animation: fadeIn 0.5s ease-in-out; /* Simple fade-in on load */
+        }
+
+        /* Keyframe for the fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
