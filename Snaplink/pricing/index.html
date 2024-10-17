@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snaplink</title>
+    <link href="file:///C:/Users/USER/Downloads/linkinbio.css" rel="stylesheet">
+	<link href="file:///C:/Users/USER/Downloads/pricing.css" rel="stylesheet">
+	
+</head>
+<body>
+
+
+    <div class="headContainer">
+        <h1 class="home-heading">Pricing</h1>
+        <div class="navbar">
+            <a href="file:///C:/Users/USER/Documents/nav.html" >Home</a>
+            <a href="file:///C:/Users/USER/Downloads/features.html" >Features</a>
+            <a href="file:///C:/Users/USER/Downloads/pricing.html"class="active">Pricing</a>
+        </div>
+    </div>
+	
+	  <div class="pricing-container">
+    <div class="pricing-header">
+      <h1>Our Pricing Plans</h1>
+      <p>Find a plan that suits your needs</p>
+    </div>
+
+    <div class="pricing-plans">
+      <!-- Pricing Plan Card 1 -->
+      <div class="pricing-card">
+        <h2>Basic Plan</h2>
+        <p>Great for individuals</p>
+        <p><strong>Custom link in Bio </strong></p>
+        <button class="cta-btn">Contact us for Pricing</button>
+      </div>
+
+      <!-- Pricing Plan Card 2 -->
+      <div class="pricing-card">
+        <h2>Pro Plan</h2>
+        <p>Advanced features for growing businesses</p>
+        <p><strong>Seo,Custom links,Security Checkup,etc.</strong></p>
+        <button class="cta-btn">Contact us for Pricing</button>
+      </div>
+
+      <!-- Pricing Plan Card 3 -->
+      <div class="pricing-card">
+        <h2>Custom Plan</h2>
+        <p>Tailored solutions for enterprises</p>
+        <button class="cta-btn" onclick="openContactForm()">Contact Us for Pricing</button>
+      </div>
+    </div>
+
+    <!-- Contact Form (Initially Hidden) -->
+    <div class="contact-form" id="contactForm" style="display: none;">
+      <h3>Request Pricing Information</h3>
+      <form id="contactFormFields">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
