@@ -12,7 +12,7 @@ phoneBody {
 
 /* Hero Section Styling */
 .hero-section {
-    background-image: url('file:///C:/Users/USER/Downloads/logo1.png'); /* Image link */
+    background-image: url('../styles/logo1.png'); /* Image link */
     background-size: cover;
     background-position: center;
     width: 100%;
